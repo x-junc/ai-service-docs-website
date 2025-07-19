@@ -103,11 +103,15 @@ const Examples = () => {
       formData.append("pdf", pdfFile, "contacts.pdf");
       formData.append("number", numberOfResults);
 
-      const response = await api.post("/model/with-pdf-tst", formData, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      });
+      const response = await api.post(
+        "/recommendations/with-pdf-tst",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
 
       if (response.data.status === "success") {
         // Parse the JSON string from the result field

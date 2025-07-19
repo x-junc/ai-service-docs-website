@@ -43,50 +43,48 @@ interface DocsSidebarItemProps {
 
 const sidebarItems: DocsSidebarItemProps[] = [
   {
-    title: "Getting Started",
+    title: "Overview",
     href: "/docs",
     items: [
       { title: "Introduction", href: "/docs" },
-      { title: "Quick Start", href: "/docs/quick-start" },
-      { title: "Authentication", href: "/docs/authentication" },
+      { title: "Problem Statement", href: "/docs/problem" },
+      { title: "Objectives", href: "/docs/objectives" },
     ],
   },
   {
-    title: "Endpoints",
-    href: "/docs/endpoints",
+    title: "System Design",
+    href: "/docs/system-design",
     items: [
-      { title: "Overview", href: "/docs/endpoints" },
-      { title: "Properties", href: "/docs/endpoints/properties" },
-      { title: "Contacts", href: "/docs/endpoints/contacts" },
-      { title: "Recommendations", href: "/docs/endpoints/recommendations" },
+      { title: "Architecture", href: "/docs/system-design/architecture" },
+      { title: "Data Models", href: "/docs/system-design/data-models" },
+      { title: "Filtering Techniques", href: "/docs/system-design/filtering" },
     ],
   },
   {
-    title: "AI Models",
-    href: "/docs/ai-models",
+    title: "API Endpoints",
+    href: "/docs/api",
     items: [
-      { title: "Overview", href: "/docs/ai-models" },
-      { title: "Matching Algorithm", href: "/docs/ai-models/matching" },
-      { title: "Scoring System", href: "/docs/ai-models/scoring" },
-      { title: "Explanations", href: "/docs/ai-models/explanations" },
+      { title: "GET /recommendations", href: "/docs/api/recommendations" },
+      { title: "Bulk Recommendation", href: "/docs/api/bulk" },
+      { title: "Comparison & PDF", href: "/docs/api/comparison" },
     ],
   },
   {
-    title: "Response Formats",
-    href: "/docs/response-formats",
+    title: "AI & Scoring",
+    href: "/docs/ai",
     items: [
-      { title: "Overview", href: "/docs/response-formats" },
-      { title: "Success Response", href: "/docs/response-formats/success" },
-      { title: "Error Response", href: "/docs/response-formats/error" },
+      { title: "Matching Logic", href: "/docs/ai/matching" },
+      { title: "Scoring System", href: "/docs/ai/scoring" },
+      { title: "Explainability", href: "/docs/ai/explainability" },
     ],
   },
   {
-    title: "Advanced Usage",
-    href: "/docs/advanced-usage",
+    title: "Evaluation",
+    href: "/docs/evaluation",
     items: [
-      { title: "Rate Limits", href: "/docs/advanced-usage/rate-limits" },
-      { title: "Webhooks", href: "/docs/advanced-usage/webhooks" },
-      { title: "SDKs & Examples", href: "/docs/advanced-usage/sdks" },
+      { title: "Relevance", href: "/docs/evaluation/relevance" },
+      { title: "Performance", href: "/docs/evaluation/performance" },
+      { title: "Integration", href: "/docs/evaluation/integration" },
     ],
   },
 ];
